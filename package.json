@@ -1,11 +1,11 @@
 {
-  "name": "mpvue-loader",
+  "name": "@moemoefish/mpvue-loader",
   "version": "1.0.15",
   "description": "mpvue single-file component loader for Webpack",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mpvue/mpvue-loader.git"
+    "url": "https://github.com/MoeMoeFish/mpvue-loader.git"
   },
   "keywords": [
     "mpvue",
@@ -16,7 +16,7 @@
     "index.js",
     "lib"
   ],
-  "author": "anchengjian",
+  "author": "moemoefish",
   "contributors": [
     {
       "name": "hucq"
@@ -27,9 +27,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Meituan-Dianping/mpvue/issues"
+    "url": "https://github.com/MoeMoeFish/mpvue-loader/issues"
   },
-  "homepage": "https://github.com/mpvue/mpvue-loader",
+  "homepage": "https://github.com/MoeMoeFish/mpvue-loader",
   "scripts": {
     "lint": "eslint lib test",
     "lint:fix": "eslint lib test --fix",
