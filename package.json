@@ -16,14 +16,18 @@
     "index.js",
     "lib"
   ],
-  "author": "moemoefish",
+  "author": "anchengjian",
   "contributors": [
     {
       "name": "hucq"
     },
     {
       "name": "aOrz"
+    },
+    {
+      "name": "fish"
     }
+
   ],
   "license": "MIT",
   "bugs": {
