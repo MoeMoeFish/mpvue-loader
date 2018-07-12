@@ -1,4 +1,4 @@
-# mpvue-loader
+# mpvue-loade
 
 >Webpack loader for mpvue components
 
@@ -27,6 +27,14 @@ output: {
   chunkFilename: path.posix.join('[id]/js/main.js')
 },
 ```
+```javascript
+new ExtractTextPlugin({
+  // filename: utils.assetsPath('css/[name].[contenthash].css')
+  // filename: utils.assetsPath('css/[name].wxss')
+  filename: path.posix.join('[name]/css/main.wxss')
+}),
+```
+
 在文件 build/webpack.prod.conf.js 中修改
 ```javascript
 output: {
@@ -34,4 +42,11 @@ output: {
   filename: path.posix.join('[name]/js/main.js'),
   chunkFilename: path.posix.join('[id]/js/main.js')
 },
+```
+```javascript
+new ExtractTextPlugin({
+  // filename: utils.assetsPath('css/[name].[contenthash].css')
+  // filename: utils.assetsPath('css/[name].wxss')
+  filename: path.posix.join('[name]/css/main.wxss')
+}),
 ```
