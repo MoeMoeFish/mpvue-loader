@@ -29,8 +29,6 @@ output: {
 ```
 ```javascript
 new ExtractTextPlugin({
-  // filename: utils.assetsPath('css/[name].[contenthash].css')
-  // filename: utils.assetsPath('css/[name].wxss')
   filename: path.posix.join('[name]/css/main.wxss')
 }),
 ```
@@ -45,8 +43,6 @@ output: {
 ```
 ```javascript
 new ExtractTextPlugin({
-  // filename: utils.assetsPath('css/[name].[contenthash].css')
-  // filename: utils.assetsPath('css/[name].wxss')
   filename: path.posix.join('[name]/css/main.wxss')
 }),
 ```
