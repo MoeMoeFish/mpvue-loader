@@ -9,3 +9,29 @@
 更多详细文档请查阅 [mpvue-loader](http://mpvue.com/build/mpvue-loader)。
 
 本仓库是内部使用的，以后升级不会保证兼容
+
+请修改以下文件：build/webpack.base.conf.js 中添加 webpack 配置
+```javascript
+resolveLoader: {
+  alias: {
+      'mpvue-loader': '@moemoefish/mpvue-loader'
+  }
+},
+```
+
+在文件 build/webpack.dev.conf.js 中修改
+```javascript
+output: {
+  path: config.build.assetsRoot,
+  filename: path.posix.join('[name]/js/main.js'),
+  chunkFilename: path.posix.join('[id]/js/main.js')
+},
+```
+在文件 build/webpack.prod.conf.js 中修改
+```javascript
+output: {
+  path: config.build.assetsRoot,
+  filename: path.posix.join('[name]/js/main.js'),
+  chunkFilename: path.posix.join('[id]/js/main.js')
+},
+```
